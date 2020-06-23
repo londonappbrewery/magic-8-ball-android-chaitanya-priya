@@ -5,6 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="bottom|top"
     android:background="@android:color/holo_blue_bright"
     android:gravity="center"
     android:orientation="vertical"
@@ -17,6 +18,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:clipToPadding="false"
         android:gravity="center">
 
         <TextView
@@ -25,11 +28,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:layout_gravity="top"
             android:background="#401859"
             android:shadowColor="#FFFFFF"
             android:text="@string/text"
             android:textColor="#FFFFFF"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
     </RelativeLayout>
@@ -43,6 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:layout_marginTop="200dp"
             android:contentDescription="@string/contentDescription"
             app:srcCompat="@drawable/ball3" />
     </RelativeLayout>
@@ -54,8 +59,8 @@
 
         <Button
             android:id="@+id/askbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
             android:layout_centerInParent="true"
             android:background="@color/colorPrimary"
             android:text="@string/askButton"
